@@ -3,13 +3,6 @@
 
 namespace EDexamenT6a8 //mal identado
 {
-    /*Clase que representa la gestíon de las notas para una asignatura.
- * Se puede(métodos): 
- *                    .
- *                    .
- *                    .
- * Estos comentarios se deben eliminar y usar comentarios de documentación en su lugar.
- */
 
     /// <summary>
     ///     Clase que representa la gestíon de las notas para una asignatura.
@@ -33,7 +26,7 @@ namespace EDexamenT6a8 //mal identado
     ///     </code>
     /// </example>
     /// <returns> Devuelve un objeto del tipo asignatura</returns>
-class Asignatura
+    class Asignatura
     {
         /// <summary>
         /// Atributos al principio para una mejor legibilidad
@@ -87,7 +80,7 @@ class Asignatura
             this.NombredelaAsignatura = Nombre_de_Asignatura;
 
         }
-        
+
         /// <summary>
         /// Funcion para introducir las notas
         /// <para> Este metodo estaba mal tabulado, con corchetes innecesarios y espacios
@@ -117,7 +110,7 @@ class Asignatura
                         MostrarNotas(out notadelExamen2, out notadelasPracticas2);
                         break;
 
-                    case "3":   
+                    case "3":
                         MostrarNotas(out notadelExamen3, out notadelasPracticas3);
                         break;
                 }
@@ -149,7 +142,7 @@ class Asignatura
         /// <returns> double nota del trimestre que queremos calcular </returns>
         public double CalculodelaNota(double notaExamen, double notaPracticas)
         {
-            double NotaTrimestre = (notaExamen * 0.8) + (notaPracticas) * 0.2;  
+            double NotaTrimestre = (notaExamen * 0.8) + (notaPracticas) * 0.2;
             return NotaTrimestre;
         }
 
@@ -159,26 +152,10 @@ class Asignatura
         /// <returns>double Nota final del curso</returns>
         public double CalcularNotaFinal()
         {
-            double NotaFinaldelCurso = (this.NotaTrimestr + this.NotadelSegungoTrimestre + this.NotadelTercerTrimestre) / 3; 
+            double NotaFinaldelCurso = (this.NotaTrimestr + this.NotadelSegungoTrimestre + this.NotadelTercerTrimestre) / 3;
             return NotaFinaldelCurso;
         }
 
-    }
-
-    class ejemplodeunaAsignatura
-    {
-
-        //TODO
-        /*
-         *   
-        static void main()
-        {
-           
-            
-            asignatura mi_asignatura_ejemplo = new asignatura("0521385", "Entornos  de Desarrollo");
-
-         }
-        */
     }
 }
 
